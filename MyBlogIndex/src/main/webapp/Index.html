@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/a.css">
+    <link rel="stylesheet" href="css/SignIn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+<header>
+    <img src="static/bar1.png" alt="">
+</header>
+
+<main>
+<div class="page-content">
+    <h1 class="BiAoTi">MYBLOG</h1>
+<div>
+    <div class="form-content">
+    <form class="form-signin" action="" method="post">
+        <table>
+            <tr>
+                <td>
+                    <h1 style="font-size: 20px;font-weight: 700;">请输入用户名登陆</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="text" name="username" class="form-control" placeholder="用户名">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="password" name="password" class="form-control" placeholder="密码">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="checkbox">
+                        <label style="font-size: 16px;font-weight: 700;">
+                            <input type="checkbox" value="remember-me"> 记住我
+                        </label>
+                        <span style="margin-left: 80px">
+                            <a href="#" class="register">忘记密码？</a>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">登陆</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="register">注册用户</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    </div>
+</div>
+</main>
+
+<footer>
+    <img src="static/bar.png" alt="" id="bar">
+    <div class="footer-container">
+        <div class="left-col">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fab fa-qq"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+            </div>
+            <p class="rights-text">© 2021-2022 Created By Lnight All Rights Reserved</p>
+        </div>
+        <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+            <p>Enter Your Email to get our news and updates.</p>
+            <form action="" class="newsletter-form">
+                <label>
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                </label>
+                <input type="submit" class="btn" value="submit">
+            </form>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

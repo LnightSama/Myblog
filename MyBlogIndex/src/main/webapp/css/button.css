@@ -1,0 +1,185 @@
+/*按钮背景*/
+.btn-preorder{
+    display:-webkit-box;
+    display:flex;
+    -webkit-box-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    align-items:center;
+    background-image:url(
+    "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 339 85'%3E%3Cpath d='M315 85v-8h-27v8H21.77L2 65.23V0h337v85z' fill-rule='evenodd' fill='%2302d8f3' opacity='.45'/%3E%3Cpath d='M313 85v-8h-27v8H19.77L0 65.23V0h337v85z' fill='%23ff003c' fill-rule='evenodd'/%3E%3C/svg%3E"
+    );
+    background-repeat:no-repeat;
+    background-position:50%;
+    background-size:100% 100%;
+    width:337px;
+    height:85px;
+    font-size:26px;
+    line-height:1;
+    font-family:BlenderProBold,sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#fff;
+    text-decoration:none;
+    letter-spacing:2px;
+    position:relative
+}
+@supports (
+(-webkit-clip-path:polygon(0 2%,100% 2%,100% 5%,0 5%))
+ or (clip-path:polygon(0 2%,100% 2%,100% 5%,0 5%))
+ ){
+    .btn-preorder:hover .btn-preorder--glitch,.btn-preorder:hover .btn-preorder__text:after{
+        display:block;
+        -webkit-animation-duration:2s;
+        animation-duration:2s;
+        -webkit-animation-timing-function:linear;
+        animation-timing-function:linear;
+        -webkit-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+        -webkit-animation-name:glitch-anim-1;
+        animation-name:glitch-anim-1;
+        -webkit-animation-direction:alternate;
+        animation-direction:alternate
+    }
+}
+.btn-preorder__text{
+    position:relative;
+    z-index:2
+}
+.btn-preorder__text:after{
+    display:none;
+    content:attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    text-shadow:2px 1px #67e3f3,-2px -2px #f8ef02;
+    z-index:2
+}
+@keyframes glitch-anim-1{
+    0%{
+        opacity:1;
+        -webkit-transform:translateZ(0);
+        transform:translateZ(0);
+        -webkit-clip-path:polygon(0 2%,100% 2%,100% 5%,0 5%);
+        clip-path:polygon(0 2%,100% 2%,100% 5%,0 5%)}
+    2%{
+        -webkit-clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        -webkit-transform:translate(-5px);
+        transform:translate(-5px)
+    }
+    6%{
+        -webkit-clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        -webkit-transform:translate(5px);
+        transform:translate(5px)}
+    8%{-webkit-clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        -webkit-transform:translate(-5px);
+        transform:translate(-5px)
+    }
+    9%{-webkit-clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        clip-path:polygon(0 78%,100% 78%,100% 100%,0 100%);
+        -webkit-transform:translate(0);
+        transform:translate(0)
+    }
+    10%{
+        -webkit-clip-path:polygon(0 54%,100% 54%,100% 44%,0 44%);
+        clip-path:polygon(0 54%,100% 54%,100% 44%,0 44%);
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    13%{
+        -webkit-clip-path:polygon(0 54%,100% 54%,100% 44%,0 44%);
+        clip-path:polygon(0 54%,100% 54%,100% 44%,0 44%);
+        -webkit-transform:translateZ(0);
+        transform:translateZ(0)
+    }
+    13.1%{
+        -webkit-clip-path:polygon(0 0,0 0,0 0,0 0);
+        clip-path:polygon(0 0,0 0,0 0,0 0);
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    15%{
+        -webkit-clip-path:polygon(0 60%,100% 60%,100% 40%,0 40%);
+        clip-path:polygon(0 60%,100% 60%,100% 40%,0 40%);
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    20%{
+        -webkit-clip-path:polygon(0 60%,100% 60%,100% 40%,0 40%);
+        clip-path:polygon(0 60%,100% 60%,100% 40%,0 40%);
+        -webkit-transform:translate3d(-5px,0,0);
+        transform:translate3d(-5px,0,0)
+    }
+    20.1%{
+        -webkit-clip-path:polygon(0 0,0 0,0 0,0 0);
+        clip-path:polygon(0 0,0 0,0 0,0 0);
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    25%{
+        -webkit-clip-path:polygon(0 85%,100% 85%,100% 40%,0 40%);
+        clip-path:polygon(0 85%,100% 85%,100% 40%,0 40%);
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    30%{
+        -webkit-clip-path:polygon(0 85%,100% 85%,100% 40%,0 40%);
+        clip-path:polygon(0 85%,100% 85%,100% 40%,0 40%);
+        -webkit-transform:translate3d(-5px,0,0);
+        transform:translate3d(-5px,0,0)
+    }
+    30.1%{
+        -webkit-clip-path:polygon(0 0,0 0,0 0,0 0);
+        clip-path:polygon(0 0,0 0,0 0,0 0)
+    }
+    35%{
+        -webkit-clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        -webkit-transform:translate(-5px);
+        transform:translate(-5px)
+    }
+    40%{
+        -webkit-clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        -webkit-transform:translate(5px);
+        transform:translate(5px)
+    }
+    45%{
+        -webkit-clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        -webkit-transform:translate(-5px);
+        transform:translate(-5px)
+    }
+    50%{
+        -webkit-clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        clip-path:polygon(0 63%,100% 63%,100% 80%,0 80%);
+        -webkit-transform:translate(0);
+        transform:translate(0)
+    }
+    55%{
+        -webkit-clip-path:polygon(0 10%,100% 10%,100% 0,0 0);
+        clip-path:polygon(0 10%,100% 10%,100% 0,0 0);
+        -webkit-transform:translate3d(5px,0,0);
+        transform:translate3d(5px,0,0)
+    }
+    60%{
+        -webkit-clip-path:polygon(0 10%,100% 10%,100% 0,0 0);
+        clip-path:polygon(0 10%,100% 10%,100% 0,0 0);
+        -webkit-transform:translateZ(0);
+        transform:translateZ(0);
+        opacity:1}
+    60.1%{
+        -webkit-clip-path:polygon(0 0,0 0,0 0,0 0);
+        clip-path:polygon(0 0,0 0,0 0,0 0);
+        opacity:1
+    }
+    to {
+        -webkit-clip-path:polygon(0 0,0 0,0 0,0 0);
+        clip-path:polygon(0 0,0 0,0 0,0 0);
+        opacity:1
+    }
+}
